@@ -1,0 +1,10 @@
+{
+  "id": "local-whisper-transcriber",
+  "name": "Local Whisper Transcriber",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Record audio and transcribe it in Obsidian using local whisper.cpp on macOS.",
+  "author": "Matthew Lockyer",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}

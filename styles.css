@@ -1,0 +1,57 @@
+.lwt-ribbon-recording {
+  color: var(--color-red);
+  animation: lwt-pulse 1.1s ease-in-out infinite;
+}
+
+.lwt-status-recording {
+  color: var(--color-red);
+  font-weight: 600;
+}
+
+.lwt-progress {
+  min-width: 320px;
+}
+
+.lwt-progress-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.lwt-progress-detail {
+  margin-bottom: 8px;
+  opacity: 0.85;
+}
+
+.lwt-progress-row {
+  margin-top: 6px;
+}
+
+.lwt-progress-label {
+  font-size: 12px;
+  margin-bottom: 3px;
+  opacity: 0.9;
+}
+
+.lwt-progress-bar {
+  width: 100%;
+  height: 10px;
+}
+
+.lwt-progress-value {
+  margin-top: 2px;
+  font-size: 11px;
+  opacity: 0.75;
+  text-align: right;
+}
+
+@keyframes lwt-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 1;
+  }
+}

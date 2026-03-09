@@ -1,0 +1,27 @@
+{
+  "name": "obsidian-local-whisper-transcriber",
+  "version": "1.0.0",
+  "description": "Obsidian plugin to record audio and transcribe it with local Whisper",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "version": "node version-bump.mjs && git add manifest.json versions.json"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin",
+    "whisper",
+    "transcription"
+  ],
+  "author": "Matthew Lockyer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.17.30",
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.25.2",
+    "obsidian": "^1.8.9",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.2"
+  }
+}

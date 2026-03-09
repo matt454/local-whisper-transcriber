@@ -1,0 +1,20 @@
+{
+  "whisperCommandTemplate": "ffmpeg -y -i {input} -ar 16000 -ac 1 {outputBase}.wav && whisper-cli -m '/Users/matthewlockyer/Library/Containers/com.goodsnooze.MacWhisper/Data/Library/Application Support/MacWhisper/models/ggml-model-whisper-small.bin' -f {outputBase}.wav -otxt -of {outputBase}",
+  "tempDir": "/var/folders/mz/70lqm_q56nvcrfxvnlb0rr780000gn/T/obsidian-whisper",
+  "insertMode": "append",
+  "prependTimestamp": true,
+  "recordingMimeType": "audio/webm",
+  "fallbackFolder": "Transcripts",
+  "keepTempFiles": false,
+  "summarizeWithOpenAI": true,
+  "azureOpenAIEndpoint": "https://youropenaiurl.openai.azure.com/openai/responses?api-version=2025-04-01-preview",
+  "azureOpenAIModel": "gpt-5.3-chat",
+  "azureApiKey": "xxxxxxx",
+  "summaryPrompt": "Create a high-signal summary of this transcript. Include: (1) concise overview, (2) key points discussed, (3) specific insights and notable observations worth calling out, (4) action items with owners/dates if present, (5) risks, blockers, or ambiguities. If details are uncertain, state uncertainty briefly instead of saying 'none' everywhere.",
+  "includeOriginalTranscriptWhenSummarized": true,
+  "maxCompletionTokens": 20000,
+  "autoRecordOnTeamsCall": true,
+  "autoStopWhenTeamsCallEnds": true,
+  "teamsDetectionIntervalSeconds": 3,
+  "teamsCallKeywords": "meeting, call, in call, live"
+}
